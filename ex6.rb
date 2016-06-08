@@ -1,5 +1,5 @@
-a = ['i1','i2','i3','i4','i5','i6','i7','i8','i9','i10','i11','i12','i13','i14','i15','i16','i17','i18','i19','i20']
-b = a.map do |val|
-	a[rand()]
-end
-print b
+a = Array.new(20) {rand(20)}
+puts "#{a}"
+ 
+b = a.select{ |x| x > 10}
+puts "Elementos mayores a 10: #{b}"
